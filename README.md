@@ -211,7 +211,7 @@ int main() {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/identityf`][@stdlib/math/base/special/identityf]</span><span class="delimiter">: </span><span class="description">evaluate the identity function for a single-precision floating-point number.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/identityf`][@stdlib/math/base/special/identityf]</span><span class="delimiter">: </span><span class="description">evaluate the identity function for a single-precision floating-point number.</span>
 
 </section>
 
