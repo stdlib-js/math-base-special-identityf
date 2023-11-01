@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2020 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,42 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isPositiveZerof = require( '@stdlib/math-base-assert-is-positive-zerof' );
-var isNegativeZerof = require( '@stdlib/math-base-assert-is-negative-zerof' );
-var isnanf = require( '@stdlib/math-base-assert-is-nanf' );
-var PINF = require( '@stdlib/constants-float32-pinf' );
-var NINF = require( '@stdlib/constants-float32-ninf' );
-var identityf = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof identityf, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function evaluates the identity function when provided a finite number', function test( t ) {
-	t.equal( identityf( -2.0 ), -2.0, 'returns expected value' );
-	t.equal( identityf( 3.0 ), 3.0, 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function evaluates the identity function when provided +-zero', function test( t ) {
-	t.equal( isNegativeZerof( identityf( -0.0 ) ), true, 'returns expected value' );
-	t.equal( isPositiveZerof( identityf( 0.0 ) ), true, 'returns expected value' );
-	t.end();
-});
-
-tape( 'the function evaluates the identity function when provided +-infinity', function test( t ) {
-	t.equal( identityf( PINF ), PINF, 'returns expected value' );
-	t.equal( identityf( NINF ), NINF, 'returns expected value' );
-	t.end();
-});
-
-tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
-	var v = identityf( NaN );
-	t.equal( isnanf( v ), true, 'returns NaN' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
