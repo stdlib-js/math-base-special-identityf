@@ -65,7 +65,7 @@ for all `x`.
 ## Usage
 
 ```javascript
-import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@esm/index.mjs';
+import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@v0.2.1-esm/index.mjs';
 ```
 
 #### identityf( x )
@@ -107,7 +107,7 @@ v = identityf( NaN );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@esm/index.mjs';
+import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@v0.2.1-esm/index.mjs';
 
 var rand;
 var i;
