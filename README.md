@@ -65,6 +65,11 @@ for all `x`.
 ## Usage
 
 ```javascript
+import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-identityf/tags). For example,
+
+```javascript
 import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@v0.2.2-deno/mod.js';
 ```
 
@@ -102,7 +107,7 @@ v = identityf( NaN );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@v0.2.2-deno/mod.js';
+import identityf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-identityf@deno/mod.js';
 
 var rand;
 var i;
